@@ -1,4 +1,4 @@
-## Sips paypageJSON-PHP samples
+## Sips Paypage JSON PHP samples
 The code samples in this repository help you to connect to Sips paypage JSON (using PHP). This repository contains several use cases.
 
 ### Contents

@@ -3,7 +3,7 @@
 
 session_start();
 
-include('Common/sealCalculationPaypageJson.php');
+include('../Common/sealCalculationPaypageJson.php');
 
 //RECOVERY OF MANUAL RESPONSE
 
@@ -22,7 +22,8 @@ if(isset($_POST['InterfaceVersion'])){
 
 //RECALCULATION OF SEAL
 
-$computedResponseSeal = compute_seal_from_string($_SESSION['sealAlgorithm'], $data, $_SESSION['secretKey']);
+$computedResponseSeal = compute_payment_response_seal($_SESSION['sealAlgorithm'], $data, $_SESSION['secretKey']);
+
 
 //RESPONSE DECODING
 

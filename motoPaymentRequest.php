@@ -12,7 +12,7 @@ include('Common/paymentRequest.php');
 //You can change the values in session according to your needs and architecture
 $_SESSION['secretKey'] = "002001000000002_KEY1";
 $_SESSION['sealAlgorithm'] = "HMAC-SHA-256";
-$_SESSION['normalReturnUrl'] = "http://localhost/code-samples/Sips-Paypage-JSON-PHP5/Common/getWebPaymentResponse.php";
+$_SESSION['normalReturnUrl'] = "http://localhost/sips-paypage-json-php/Common/paymentResponse.php";
 $_SESSION["urlForPaymentInitialisation"] = "https://payment-webinit.simu.sips-atos.com/rs-services/v2/paymentInit/";
 
 $requestData = array(
