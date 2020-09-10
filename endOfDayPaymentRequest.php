@@ -1,7 +1,7 @@
 <?php
 /*This file generates the payment request and sends it to the Sips server
 For more information on this use case, please refer to the following documentation:
-https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html */
+https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html#End-of-day-payment */
 
 session_start();
 
@@ -23,7 +23,7 @@ $requestData = array(
    "orderChannel" => "INTERNET",
    "currencyCode" => "978",
    "interfaceVersion" => "IR_WS_2.20",
-   
+
    "captureMode" => "AUTHOR_CAPTURE",
    "captureDay" => "0",
 );

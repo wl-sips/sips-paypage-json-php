@@ -1,7 +1,7 @@
 <?php
 /*This file generates the payment request and sends it to the Sips server
 For more information on this use case, please refer to the following documentation:
-https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html */
+https://documentation.sips.worldline.com/en/WLSIPS.004-GD-Functionality-set-up-guide.html#MOTO */
 
 session_start();
 
@@ -22,7 +22,7 @@ $requestData = array(
    "amount" => "2000",             //Note that the amount entered in the "amount" field is in cents
    "currencyCode" => "978",
    "interfaceVersion" => "IR_WS_2.20",
-   
+
    "orderChannel" => "MOTO",
 );
 
