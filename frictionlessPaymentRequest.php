@@ -13,7 +13,7 @@ include('Common/paymentRequest.php');
 $_SESSION['secretKey'] = "p64ifeYBVIaRcjaWoahCiw9L8wokNLqG2_YOj_POD4g";
 $_SESSION['sealAlgorithm'] = "HMAC-SHA-256";
 $_SESSION['normalReturnUrl'] = "http://localhost/sips-paypage-json-php/Common/paymentResponse.php";
-$_SESSION["urlForPaymentInitialisation"] = "https://payment-webinit.test.sips-atos.com/rs-services/v2/paymentInit";
+$_SESSION["urlForPaymentInitialisation"] = "https://payment-webinit.test.sips-services.com/rs-services/v2/paymentInit";
 
 $requestData = array(
    "normalReturnUrl" => $_SESSION['normalReturnUrl'],
